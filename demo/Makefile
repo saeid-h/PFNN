@@ -6,7 +6,7 @@ ifeq ($(findstring Linux,$(PLATFORM)),Linux)
 endif
 
 ifeq ($(findstring Darwin,$(PLATFORM)),Darwin)
-	LFLAGS = -lGL -lGLEW -lSDL2
+	LFLAGS = -framework OpenGL -lGLEW -lSDL2
 	EXT = 
 endif
 
